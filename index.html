@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🎵 Song Writing Bot</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="glow-bg"></div>
+
+  <div class="container">
+    <h1>🎤 Song Writing Assistant</h1>
+
+    <form id="songForm" class="glass-card">
+      <input type="text" id="topic" placeholder="Song Topic (e.g. Lost Love)" required />
+
+      <select id="genre">
+        <option value="Pop">Pop</option>
+        <option value="Rap">Rap</option>
+        <option value="Rock">Rock</option>
+        <option value="Country">Country</option>
+        <option value="R&B">R&B</option>
+      </select>
+
+      <select id="tone">
+        <option value="Emotional">Emotional</option>
+        <option value="Motivational">Motivational</option>
+        <option value="Romantic">Romantic</option>
+        <option value="Sad">Sad</option>
+        <option value="Happy">Happy</option>
+      </select>
+
+      <button type="submit">🎶 Generate Lyrics</button>
+    </form>
+
+    <div id="output" class="result-card glass-card">
+      <h2>🎧 Generated Lyrics:</h2>
+      <pre id="resultText">Waiting for input...</pre>
+      <button id="copyBtn">📋 Copy to Clipboard</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
