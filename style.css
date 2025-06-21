@@ -114,3 +114,29 @@ button:hover {
   line-height: 1.6;
   color: #e0e0e0;
 }
+
+.scroll-box {
+  max-height: 250px;
+  overflow-y: auto;
+  text-align: left;
+  white-space: pre-wrap;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #e0e0e0;
+  padding-right: 8px;
+}
+
+/* Optional: Scrollbar style for a sleeker UI */
+.scroll-box::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scroll-box::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scroll-box::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+
